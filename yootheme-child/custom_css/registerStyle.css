@@ -1,0 +1,71 @@
+/* CSS FOR REGISTER PAGE ONLY, WILL OVERRIDE DEFAULT CSS */
+.accordion {
+    color: black;
+    background-color: white;
+    max-width: 800px;
+
+}
+.accordion .containerr {
+    position: relative;
+    margin: 10px 10px;
+}
+.accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    text-align: left;
+}
+.accordion .label::before {
+     content: '+';
+     color: black;
+     position: absolute;
+
+     top: 50%;
+     right: -5px;
+     font-size: 18px;
+     transform: translateY(-50%);
+ }
+
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+.accordion .content {
+    position: relative;
+    align-content: center;
+    background: white;
+    height: 0;
+    font-size: 14px;
+    text-align: justify;
+    width: 75%;
+    overflow: auto;
+
+}
+.accordion hr {
+    width: 100;
+    margin-left: 0;
+
+}
+/* Unhides the content part when active. Sets the height */
+.accordion .containerr.active .content {
+
+
+    height: auto;
+    font-size: 14px;
+  width: auto;
+
+}
+/* Changes from plus sign to negative sign once active */
+.accordion .containerr.active .label::before {
+    content: '-';
+    font-size: 30px;
+
+}
+/* Sets the background color of the body to blue. Sets font to Rubik */
+body {
+    background-color: #0A2344;
+    font-family: 'rubik', sans-serif;
+}
+/* Aligns the heading text to the center. */
+.h1 {
+    text-align: center;
+}

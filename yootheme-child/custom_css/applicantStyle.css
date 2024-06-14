@@ -1,0 +1,215 @@
+/* CSS FOR APPLICANT PAGE ONLY, WILL OVERRIDE DEFAULT CSS */
+
+tr:hover.clickable-row-read{
+    cursor: pointer;
+    background-color: #CCC;
+}
+tr:hover.clickable-row-unread{
+    cursor: pointer;
+    background-color: #CCC;
+}
+tr.clickable-row-unread{
+    font-weight: bolder;
+}
+tr.clickable-row-read{
+
+    font-style: italic;
+}
+.uk-container{
+
+}
+.filter{
+    width: auto;
+}
+
+button {
+    /* border-radius: 20px; */
+    /* border: 1px solid #FF4B2B; */
+    /* background-color: #FF4B2B; */
+    /* color: #FFFFFF; */
+    font-size: 12px;
+    /* font-weight: bold; */
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* transition: transform 80ms ease-in; */
+}
+form {
+    /*background-color: RED;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 50px;
+    height: 100%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.sub_musik{
+    visibility: hidden;
+
+}
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+table {
+    background: #f5f5f5;
+    border-collapse: separate;
+    box-shadow: inset 0 1px 0 #fff;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 30px auto;
+    text-align: left;
+    table-layout: fixed;
+
+}
+
+th {
+    background: url(https://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);
+    border-left: 1px solid #555;
+    border-right: 1px solid #777;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #333;
+    box-shadow: inset 0 1px 0 #999;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+    text-shadow: 0 1px 0 #000;
+}
+
+th:after {
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+
+    display: block;
+    height: 25%;
+    left: 0;
+    margin: 1px 0 0 0;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+th:first-child {
+    border-left: 1px solid #777;
+    box-shadow: inset 1px 1px 0 #999;
+}
+
+th:last-child {
+    box-shadow: inset -1px 1px 0 #999;
+}
+
+td {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 300ms;
+}
+
+td:first-child {
+    box-shadow: inset 1px 0 0 #fff;
+}
+fieldset{
+    font-size: 8px;
+    max-width: 20%;
+
+}
+.accordion {
+    color: black;
+    /*background-color: #d19f9f;*/
+    max-width: 100%;
+
+}
+.accordion .containerr {
+        /* position: fixed; */
+        margin: 10px 10px;
+        max-width: 40%;
+        min-width: 40%;
+        /* width: fit-content; */
+        display: inline-grid;
+        align-items: start;
+        /* justify-content: start;*/
+}
+    .accordion .label {
+        position: relative;
+        padding: 10px 0;
+        font-size: 18px;
+        color: black;
+        cursor: pointer;
+        text-align: left;
+    }
+    .accordion .label::before {
+        content: '+';
+        color: black;
+        position: absolute;
+
+        top: 50%;
+        right: -5px;
+        font-size: 18px;
+        transform: translateY(-50%);
+    }
+
+    /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+.accordion .content {
+    position: relative;
+    align-content: center;
+    background: white;
+    height: 0;
+    font-size: 12px;
+    text-align: justify;
+    /* width: 75%; */
+    overflow: auto;
+
+}
+.accordion hr {
+    width: 100;
+    margin-left: 0;
+
+}
+/* Unhides the content part when active. Sets the height */
+.accordion .containerr.active .content {
+
+
+    height: auto;
+    padding-left: 15%;
+    font-size: 14px;
+    width: 75%;
+
+}
+/* Changes from plus sign to negative sign once active */
+.accordion .containerr.active .label::before {
+    content: '-';
+    font-size: 30px;
+
+}
+.checkboxes label {
+    display: inline-block;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+.checkboxes input {
+    vertical-align: middle;
+}
+.checkboxes label span {
+    vertical-align: middle;
+}
+#loadingBar {
+    height: 25px;
+    background-color: #7e7a7a;
+    width: 0;
+    transition: width 0.3s;
+    margin-top: 20px;
+}

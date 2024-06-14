@@ -1,0 +1,766 @@
+/**
+ * Theme Name:     YOOtheme Child
+ * Author:         YOOtheme
+ * Template:       yootheme
+ * Text Domain:	   yootheme-child
+ * Description:    A powerful, flexible and elegant website builder that allows you to create complex pages within minutes and customize every aspect of the theme.
+ */
+
+
+
+
+/*--------------FORM CSS START------------------------*/
+table.ht-cf7-formlist-table{
+    border-collapse: collapse;
+    width: 50%;
+
+}
+table.ht-cf7-formlist-table th, table.ht-cf7-formlist-table td{
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+    width: 50%;
+}
+.ht-cf7-formlist-info{
+    margin-top: 30px;
+}
+.extcf7-form-data-details{
+    text-align: left;
+}
+.extcf7-form-data-details tr th{
+    width: 100px;
+}
+.extcf7-form-data-details tr td,.extcf7-form-data-details tr th{
+    padding: 10px;
+}
+table.extcf7-form-data-details tr th, table.extcf7-form-data-details tr td{
+    border: 1px solid #ccc8c8;
+}
+.wpcf7 .screen-reader-response {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    word-wrap: normal !important;
+}
+.wpcf7 form .wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+    border: 2px solid #00a0d2; /* Blue */
+}
+.wpcf7 form.init .wpcf7-response-output,
+.wpcf7 form.resetting .wpcf7-response-output,
+.wpcf7 form.submitting .wpcf7-response-output {
+    display: none;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #46b450; /* Green */
+}
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+    border-color: #dc3232; /* Red */
+}
+.wpcf7 form.spam .wpcf7-response-output {
+    border-color: #f56e28; /* Orange */
+}
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: #ffb900; /* Yellow */
+}
+.wpcf7-form-control-wrap {
+    position: relative;
+}
+.wpcf7-not-valid-tip {
+    color: #dc3232; /* Red */
+    font-size: 1em;
+    font-weight: normal;
+    display: block;
+}
+
+.use-floating-validation-tip .wpcf7-not-valid-tip {
+    position: relative;
+    top: -2ex;
+    left: 1em;
+    z-index: 100;
+    border: 1px solid #dc3232;
+    background: #fff;
+    padding: .2em .8em;
+    width: 24em;
+}
+
+.wpcf7-list-item-label::before,
+.wpcf7-list-item-label::after {
+    content: " ";
+}
+.wpcf7-spinner {
+    visibility: hidden;
+    display: inline-block;
+    background-color: #23282d; /* Dark Gray 800 */
+    opacity: 0.75;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0 24px;
+    position: relative;
+}
+form.submitting .wpcf7-spinner {
+    visibility: visible;
+}
+.wpcf7-spinner::before {
+    content: '';
+    position: absolute;
+    background-color: #fbfbfc; /* Light Gray 100 */
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-radius: 100%;
+    transform-origin: 8px 8px;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+    .wpcf7-spinner::before {
+        animation-name: blink;
+        animation-duration: 2000ms;
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+.wpcf7 input[type="file"] {
+    cursor: pointer;
+     WIDTH: 80%;
+}
+.wpcf7 input[type="file"]:disabled {
+    cursor: default;
+}
+.wpcf7 .wpcf7-submit:disabled {
+    cursor: not-allowed;
+}
+.wpcf7 input[type="url"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"] {
+    direction: ltr;
+}
+.wpcf7-reflection > output {
+    display: list-item;
+    list-style: none;
+}
+.wpcf7-reflection > output[hidden] {
+    display: none;
+}
+/*--------------FORM CSS END------------------------*/
+
+
+/* -------------RANDOM DEFAULT CSS FOR HTML ELEMENTS START------------------- */
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+}
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+span {
+    font-size: 12px;
+}
+a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+button {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+button:active {
+    transform: scale(0.95);
+}
+button:focus {
+    outline: none;
+}
+button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+.uk-navbar-nav>li>a:active{
+    color:#7eb029;
+}
+.uk-navbar-nav>li.uk-active>a{
+    color: #7eb029;
+}
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 85%;
+
+}
+.tableButton{
+    width: auto;
+    height: auto;
+    background-color: white;
+    color: black;
+    border: black 2px;
+   padding-top: 12px;
+	padding-right: 12px;
+padding-bottom: 12px;
+padding-left: 12px;
+border-radius: 20px;
+  border: 1px solid black;
+}
+/* -------------RANDOM DEFAULT CSS FOR HTML ELEMENTS END------------------- */
+
+
+
+
+/* ------------ MODAL CSS START ------------*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's above other content */
+
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+
+
+    background-color: #fff; /* Background color for the modal */
+    border: 2px solid #ccc; /* Border style */
+    padding: 20px; /* Padding inside the modal */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Box shadow for a subtle lift effect */
+    max-width: 80%; /* Maximum width for the modal */
+    min-width: 50%;
+    z-index: 2000;
+}
+.close {
+    position: relative;
+
+    cursor: pointer;
+    font-size: 24px;
+    color: #555;
+}
+/* ------------ MODAL CSS END ------------*/
+
+
+/* ------------ MOBILE-ONLY CSS START ------------*/
+@media (max-width: 768px){
+.wpcf7-list-item {
+    display: inline-block;
+    margin: 0 0 0 1em;
+ 
+         min-width: 50px;
+}
+.kommuner{
+column-count:2;
+
+}
+    input [type="email"], input[type="tel"], input[type="text"],input[type="password"] {
+        width: 100%;
+        height: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        box-shadow: 1px 1px 1px #ddd;
+        color: #333;
+        font-family: Arial,sans-serif;
+
+    }
+    #username{
+        height: 20px;
+    }
+    button {
+        border-radius: 20px;
+        border: 1px solid #FF4B2B;
+        background-color: #FF4B2B;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: bold;
+    	padding: 15px 20px 15px 20px;
+        width: 200px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: transform 80ms ease-in;
+    }
+
+    .g-recaptcha{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        scale: 0.7;
+    }
+
+
+    .mobileheading{
+        font-size: 28px;
+        font-weight: bold;
+        padding: 0 0 0 0;
+        margin: 60px 0 20px 0;
+    }
+
+
+
+
+    .btn-flip {
+        border-radius: 20px;
+        width: 200px;
+        border: 1px solid #FF4B2B;
+        opacity: 1;
+        outline: 0;
+        background-color: #FF4B2B;
+        color: #FFFFFF;
+        line-height: 40px;
+        position: relative;
+        text-align: center;
+        letter-spacing: 1px;
+        display: inline-block;
+        text-decoration: none;
+
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+
+        &:hover {
+
+            &:after {
+                opacity: 1;
+                transform: translateY(0) rotateX(0);
+            }
+
+            &:before {
+                opacity: 0;
+                transform: translateY(50%) rotateX(90deg);
+            }
+        }
+
+        &:after {
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            border-radius: 20px;
+            border: 1px solid #FF4B2B;
+            color: #FFFFFF;
+            display: block;
+            transition: 0.5s speed;
+            position: absolute;
+            background: #adadaf;
+            content: attr(data-back);
+            transform: translateY(-50%) rotateX(90deg);
+        }
+
+        &:before {
+            top: 0;
+            left: 0;
+            opacity: 1;
+            border-radius: 20px;
+            border: 1px solid #FF4B2B;
+            color: #FFFFFF;
+            display: block;
+            padding: 0 30px;
+            line-height: 40px;
+            transition: 0.5s speed;
+            position: relative;
+            background-color: #FF4B2B;
+            content: attr(data-front);
+            transform: translateY(0) rotateX(0);
+        }
+    }
+   .mobile_button {
+        margin-top: 20%;
+
+        border-radius: 20px;
+        border: 1px solid #ffffff;
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 12px 45px;
+        letter-spacing: 1px;
+        min-width: 250px;
+        text-transform: uppercase;
+        transition: transform 80ms ease-in;
+
+
+    }
+
+
+    .container {
+        background-color: #fff;
+    /* border-radius: 10px;*/
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+        0 10px 10px rgba(0,0,0,0.22);
+        position: relative;
+        overflow: hidden;
+        min-width: 100%;
+        min-height: 500px;
+    }
+
+    form {
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 50px;
+        height: 100%;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        text-align: center;
+    }
+
+
+    .form-container {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        transition: all 0.6s ease-in-out;
+
+    }
+
+    .sign-in-container {
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        visibility: visible;
+        transition: transform 1s; /* Apply a smooth transform transition */
+        backface-visibility: hidden;
+    }
+
+    .reset-container {
+
+        width: 100%;
+        z-index: 3;
+    }
+
+    .container.right-panel-active .sign-in-container {
+        transform: rotateY(180deg);
+
+    }
+
+    .sign-up-container {
+        left: 0;
+        width: 100%;
+
+        z-index: 1;
+        padding-top: 30px;
+        transition: transform 1s; /* Apply a smooth transform transition */
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+    }
+
+    .container.right-panel-active .sign-up-container {
+        transform: rotateY(0deg);
+
+        z-index: 5;
+
+    }
+
+   /* @keyframes show {
+        0%  {
+            opacity: 0;
+
+        }
+
+      100%{
+            opacity: 1;
+
+        }
+    }*/
+
+
+
+
+    .overlay-container {
+      visibility: hidden;
+    }
+    .overlay {
+        visibility: hidden;
+    }
+    .overlay-panel {
+        visibility: hidden;
+
+    }
+
+}
+/* ------------ MOBILE-ONLY CSS END ------------*/
+
+
+/* ------------ DESKTOP-ONLY CSS START ------------*/
+@media (min-width: 768px) {
+.wpcf7-list-item {
+    display: inline-block;
+    margin: 0 0 0 1em;
+     
+}
+.uacf7-step.step-content button.uacf7-prev{
+    margin-top: 5px;
+    float: left;
+}
+
+.kommuner{
+    max-width: 650px;
+    column-count: 7;
+    column-rule-style: solid;
+  
+      }
+    input[type="password"]{
+        width: 104%;
+        height: 30px;
+        padding: 5px;
+        /*border-radius: 5px;
+        border: 1px solid #ddd;*/
+        box-shadow: 1px 1px 1px #ddd;
+        color: #333;
+        font-family: Arial,sans-serif;
+    }
+    .mobile_button{
+        visibility: hidden;
+    }
+    input {
+        background-color: #eee;
+        border: none;
+        padding: 12px 15px;
+        margin: 8px 0;
+        width: 100%;
+    }
+    .g-recaptcha{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        background-color: #fff;
+       /* border-radius: 10px;*/
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+        position: relative;
+        overflow: hidden;
+        min-width: 80%;
+
+        min-height: 700px;
+    }
+    form {
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 50px;
+        height: 100%;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        text-align: center;
+    }
+
+
+    .form-container {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        transition: all 0.6s ease-in-out;
+
+    }
+    .form-container-reset {
+        padding-left: 35%;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        transition: all 0.6s ease-in-out;
+
+    }
+    .sign-in-container {
+        left: 0;
+        width: 50%;
+        z-index: 2;
+    }
+    .reset-container {
+        min-width: 20%;
+        width: 50%;
+        z-index: 3;
+    }
+
+    .container.right-panel-active .sign-in-container {
+        transform: translateX(100%);
+
+    }
+
+    .sign-up-container {
+        left: 0;
+        width: 50%;
+        opacity: 0;
+        z-index: 1;
+        padding-top: 30px;
+    }
+
+    .container.right-panel-active .sign-up-container {
+        transform: translateX(100%);
+        opacity: 1;
+        z-index: 5;
+        animation: show 0.6s;
+    }
+/*
+    @keyframes show {
+        0%, 49.99% {
+            opacity: 0;
+            z-index: 1;
+        }
+
+        50%, 100% {
+            opacity: 1;
+            z-index: 5;
+        }
+    }*/
+
+    .overlay-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        transition: transform 0.6s ease-in-out;
+        z-index: 100;
+    }
+
+    .container.right-panel-active .overlay-container{
+        transform: translateX(-100%);
+    }
+
+    .overlay {
+    	background-image: url("http://www.kulturskolan.info/jobb/wp-content/uploads/2023/10/Kulturskolan.png");
+        /*background: #FF416C;
+        background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+        background: linear-gradient(to right, #FF4B2B, #FF416C);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        color: #FFFFFF;
+        position: relative;
+        left: -100%;
+        height: 100%;
+        width: 200%;
+        transform: translateX(0);
+        transition: transform 0.6s ease-in-out;
+    }
+
+    .container.right-panel-active .overlay {
+        transform: translateX(50%);
+    }
+
+    .overlay-panel {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /*padding: 0 40px;*/
+        text-align: center;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        transform: translateX(0);
+        transition: transform 0.6s ease-in-out;
+    }
+
+       .overlay-left {
+        transform: translateX(-20%);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .container.right-panel-active .overlay-left {
+        transform: translateX(0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .overlay-right {
+        right: 0;
+        transform: translateX(0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .container.right-panel-active .overlay-right {
+        transform: translateX(20%);
+        background-color: rgba(0,0,0,0.4);
+    }
+}
+/* ------------ DESKTOP-ONLY CSS END ------------*/
+/* Kulturskolan Anmälningsformulär Container */
+
+/* Definiera en container med en mer konstnärlig och levande stil */
+.container {
+    /*border: 5px solid #FF5733;*/
+   /* background-image: linear-gradient(to bottom right, #FAFAFA, #33FF57);*/
+    /*border-radius: 25px;*/
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-family: 'ArtisticFont', Arial, sans-serif;
+    text-align: center;
+}
+
+/* Stil för anmälningsknappen */
+.register-button {
+    background-color: #33FF57;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
